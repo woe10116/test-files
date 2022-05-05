@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+'title': 'Test'
+})
+
+<body  data-id-page = 'main'>
+	<div class="wrapper">
+		@@include('html/leftnav.html', {
+			'name1' : 'Главная',
+			'name2' : 'Константин Константиновский',
+			'name3' : 'Мероприятия',
+			'name4' : 'Сотрудники',
+			'name5' : 'Заметки',
+			'name6' : 'Статистика',
+			'name7' : 'Удобрения',
+			'name8' : 'Погода',
+			'name9' : 'Организации'
+
+
+
+		})
+		<main class="main">
+			
+			
+			@@include('html/includes/main-page.html',{
+				'title1' : 'Работа с полями',
+				'title2' : 'Статистика урожая',
+				'title3' : 'Погода в Курской области',
+				'title4' : 'Отчеты и статистика',
+				'title5' : 'Сотрудники',
+				'title6' : 'Статистика пшена на полях ЦАО',
+				'title7' : 'Арендуемая техника'
+			})
+		
+		</main>
+		@@include('html/footer.html', {})
+		<script src="js/app.min.js"></script>
+	</div>
+</body>
+
+</html>
